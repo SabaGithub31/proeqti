@@ -1,0 +1,540 @@
+/* header start */
+.header{
+    height: 12vh;
+    align-items: center;
+}
+.logo {
+    width: 300px;
+    height: 84px;
+    background-image: url(/images/logo/sabuka-high-resolution-logo-transparent.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+}
+
+@media screen and (max-width: 1300px) {
+    .logo {
+        width: 300px;
+        height: 84px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 200px;
+        height: 55px;
+        margin-top: 3vh;
+    }
+}
+@media screen and (max-width: 700px) {
+    .logo {
+        width: 150px;
+        height: 40px;
+        margin-top: 4vh;
+    }
+}
+
+.header-button{
+    position: relative;
+    width: 135px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 12px;
+    background: none;
+}
+.header-button:hover {
+    border: 2px solid var(--button-yellow-color);
+    color: white;
+}
+.header-button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--button-yellow-color) ;
+    z-index: -1;
+    transition: 0.5s;
+}
+.header-button:hover::before{
+    width: 100%;
+}
+.header-tel-link {
+    text-decoration: none;
+    color: black;
+}
+.header-tel-link:hover {
+    color: rgb(255, 217, 0) ;
+}
+
+/* header end */
+/* navbar start */
+.navbar-icons{
+    font-size: larger;
+    margin-left: 1vh;
+    color: aliceblue;
+    transition: 0.3s;
+}
+.navbar-icons:hover {
+    color:rgb(255, 217, 0) ;
+}
+
+.nav-hover {
+    position: relative;
+    margin-left: 10px;
+}
+.nav-hover::after{
+    content: "";
+    position: absolute;
+    background-color:var(--button-yellow-color) ;
+    height: 3px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+    top: -14px;
+}
+
+.nav-hover:hover::after {
+    width: 100%;
+}
+/* navbar end */
+/* section-1 start */
+.section-10{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 450px;
+    background-image: url(/images/rooms/image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-10-text{
+    text-align: center;
+    width: 30%;
+    height: 60%;
+}
+.section-1-link{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.section-1-link:hover{
+    color: var(--button-yellow-color);
+}
+@media screen and (max-width: 1300px) {
+    .section-10-text {
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-10-text {
+        width: 65% !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section-10-text {
+        width: 90% !important;
+    }
+    
+}
+/* section-1 end */
+/* section-2 start */
+.section-2-image {
+    position: relative;
+    top: 35px;
+    height: 500px;
+    width: 45% !important;
+    background-image: url(/images/team/man-person-suit-hair-male-portrait-65154-pxhere.com.jpg);
+    background-position-y: 20%;
+    background-size: cover;
+}
+
+.section-2-text {
+    height: 400px;
+    width: 45% !important;
+    margin-left: 10%;
+}
+.section-2-about-us{
+    position: relative;
+    color: var(--button-yellow-color);
+}
+.section-2-about-us::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    width: 100%;
+    background-color: var(--button-yellow-color);
+}
+
+.section-2-about-us-paragraph {
+    width: 80%;
+}
+.section-2-about-us-button1{
+    width: 200px;
+    height: 60px;
+    border: 2px solid var(--button-yellow-color);
+    background-color: var(--button-yellow-color);
+    color: rgb(76, 76, 76);
+    transition: 0.5s;
+}
+.section-2-about-us-button1:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+.section-2-about-us-button2{
+    width: 250px;
+    height: 60px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    transition: 0.3s;
+}
+.section-2-about-us-button2:hover {
+    border: 2px solid var(--button-yellow-color);
+    color: var(--button-yellow-color);
+}
+.section-2-link-btn{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+.section-2-link-btn:hover{
+    color: var(--button-yellow-color);
+}
+@media screen and (max-width: 1300px) {
+    .section-2-image {
+        width: 45% !important;
+    }
+    .section-2-text {
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-2-image {
+        width: 65% !important;
+    }
+    .section-2-text {
+        width: 65% !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section-2-image {
+        width: 90% !important;
+    }
+    .section-2-text {
+        width: 90% !important;
+    }
+}
+/* section-2 end */
+/* section-3 start */
+.section-3-rooms{
+    margin-top: 40px !important;
+    width: 24% !important;
+    margin-left: 1%;
+    height: 350px;
+}
+.section-3-rooms-img{
+    width: 100% !important;
+    height: 300px;
+    background-size: 117%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+.section-3-rooms-img:hover{
+    background-size: 127%;
+    filter: brightness(0.5);
+}
+.section-3-rooms-text{
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+.section-3-rooms-text:hover{
+    color: var(--button-yellow-color);
+}
+@media screen and (max-width: 1300px) {
+    .section-3-rooms {
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-3-rooms {
+        width: 65% !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section-3-rooms {
+        width: 90% !important;
+    }
+}
+/* section-3 end */
+/* section-4 start */
+.section-4-carousel{
+    position: relative;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 400px;
+    /* border: 2px solid rgb(189, 189, 189); */
+    box-shadow: 0px 0px 8px rgb(189, 189, 189);
+}
+.section-4-text{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    margin-left: 20%;
+    height: 220px;
+    text-align: center;
+}
+.section-4-link{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.section-4-link:hover{
+    color: var(--button-yellow-color);
+}
+.section-4-carousel-1{
+    position: relative;
+}
+.section-4-carousel-1::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    border: transparent;
+    border-radius: 50%;
+    background-image: url(/images/people/2229414.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-4-carousel-2{
+    position: relative;
+}
+.section-4-carousel-2::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    border: transparent;
+    border-radius: 50%;
+    background-image: url(/images/people/360_F_425659755_5BaLdNbbCtQbbiz1JNFBikshfiCWI5NE.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.section-4-carousel-3{
+    position: relative;
+}
+.section-4-carousel-3::before{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 44%;
+    width: 120px;
+    height: 120px;
+    background-color: aqua;
+    border: transparent;
+    border-radius: 50%;
+    background-image: url(/images/people/wallpapersden.com_adriana-lima-beautiful-pictures_1600x1200.jpg);
+    background-size: cover;
+    background-position: center;
+}
+@media screen and (max-width: 1300px) {
+    .section-4-text {
+        scale: 1;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-4-text {
+        scale: 0.7;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section-4-text {
+        scale: 0.4;
+    }
+}
+/* section-4 end */
+/* section-5 start */
+.section-5{
+    width: 90% !important;
+    margin-left: 5%;
+    height: 300px;
+    background-image: url(/images/people/windows-7509369_1920.jpg);
+    background-size: cover;
+}
+.section-5-text{
+    text-align: center;
+    width: 18% !important;
+    height: 300px;
+    margin-left: 5.5%;
+}
+@media screen and (max-width: 1300px) {
+    .section-5-text {
+        width: 45% !important;
+    }
+    .section-5{
+        height: 1200px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .section-5-text {
+        width: 65% !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .section-5-text {
+        width: 90% !important;
+    }
+    
+}
+/* section-5 end */
+/* end-1 start */
+.end-1-col-4{
+    height: 350px;
+    /* background-color: rgb(111, 188, 255); */
+    margin-left: 8%;
+}
+.end-1-col-4-1{
+    width: 20% !important;
+}
+.end-1-col-4-2{
+    width: 17% !important;
+}
+.end-1-col-4-3{
+    width: 30% !important;
+}
+@media screen and (max-width: 1300px) {
+    .end-1-col-4 {
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .end-1-col-4 {
+        width: 65% !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .end-1-col-4 {
+        width: 90% !important;
+    }
+}
+.contact-us-text{
+    margin-left: 5%;
+    color: white;
+    transition: 0.3s;
+}
+.contact-us-text:hover{
+    color: var(--button-yellow-color);
+}
+.popular-news-text{
+    color: rgb(229, 229, 0);
+    transition: 0.3s;
+}
+.popular-news-text:hover{
+    color: var(--button-yellow-color);
+}
+.quick-links{
+    height: 350px;
+}
+.quick-links-text{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.quick-links-text:hover{
+    color: var(--button-yellow-color);
+}
+.quick-links-button1{
+    width: 160px;
+    height: 60px;
+    border: 3px solid white;
+    color: white;
+    background: none;
+    transition: 0.3s;
+}
+.quick-links-button1:hover{
+    color: var(--text-color);
+    background-color: var(--button-yellow-color);
+    border: 3px solid var(--button-yellow-color);
+}
+
+.quick-links-button2{
+    margin-top: 14px;
+    width: 170px;
+    height: 60px;
+    color: var(--text-color);
+    border: none;
+    background-color: var(--button-yellow-color);
+    transition: 0.3s;
+}
+.quick-links-button2:hover{
+    background-color: var(--text-color);
+    color: white;
+}
+/* end-1 end */
+/* end-2 start */
+.end-2-col-4{
+    height: 100px;
+    width: 30% !important;
+    margin-left: 3%;
+    /* background-color: rgb(74, 171, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end-2-icons{
+    font-size: larger;
+    margin-left: 1vh;
+    color: rgb(114, 109, 109);
+    transition: 0.3s;
+}
+.end-2-icons:hover {
+    color:rgb(255, 217, 0) ;
+}
+.privacy-policy{
+    font-size: smaller;
+    color: rgb(114, 109, 109);
+    transition: 0.3s;
+    text-decoration: none;
+}
+.privacy-policy:hover {
+    color:rgb(255, 217, 0) ;
+}
+/* end-2 end */
+/* go-up start */
+.go-up{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--button-yellow-color);
+    transition: 0.3s;
+}
+.go-up:hover{
+    background-color: var(--button-hovered-color);
+    font-size: 35px;
+}
+/* go-up end */

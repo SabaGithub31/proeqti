@@ -1,0 +1,237 @@
+/* header start */
+.header{
+    height: 12vh;
+    align-items: center;
+}
+.logo {
+    width: 300px;
+    height: 84px;
+    background-image: url(/images/logo/sabuka-high-resolution-logo-transparent.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2vh;
+}
+
+@media screen and (max-width: 1300px) {
+    .logo {
+        width: 300px;
+        height: 84px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 200px;
+        height: 55px;
+        margin-top: 3vh;
+    }
+}
+@media screen and (max-width: 700px) {
+    .logo {
+        width: 150px;
+        height: 40px;
+        margin-top: 4vh;
+    }
+}
+
+.header-button{
+    position: relative;
+    width: 135px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 12px;
+    background: none;
+}
+.header-button:hover {
+    border: 2px solid var(--button-yellow-color);
+    color: white;
+}
+.header-button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: var(--button-yellow-color) ;
+    z-index: -1;
+    transition: 0.5s;
+}
+.header-button:hover::before{
+    width: 100%;
+}
+.header-tel-link {
+    text-decoration: none;
+    color: black;
+}
+.header-tel-link:hover {
+    color: rgb(255, 217, 0) ;
+}
+
+/* header end */
+/* navbar start */
+.navbar-icons{
+    font-size: larger;
+    margin-left: 1vh;
+    color: aliceblue;
+    transition: 0.3s;
+}
+.navbar-icons:hover {
+    color:rgb(255, 217, 0) ;
+}
+
+.nav-hover {
+    position: relative;
+    margin-left: 10px;
+}
+.nav-hover::after{
+    content: "";
+    position: absolute;
+    background-color:var(--button-yellow-color) ;
+    height: 3px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+    top: -14px;
+}
+
+.nav-hover:hover::after {
+    width: 100%;
+}
+/* navbar end */
+/* search start */
+.search{
+    width: 100% !important;
+    height: 100%;
+    border: transparent;
+    background-color: rgb(237, 237, 237) ;
+}
+.search-btn{
+    width: 100% !important;
+    height: 100%;
+    color: var(--text-color);
+    border: transparent;
+    transition: 0.3s;
+    background-color: var(--button-yellow-color);
+}
+.search-btn:hover{
+    color: white;
+    background-color: var(--text-color);
+}
+/* search end */
+/* end-1 start */
+.end-1-col-4{
+    height: 350px;
+    /* background-color: rgb(111, 188, 255); */
+    margin-left: 8%;
+}
+.end-1-col-4-1{
+    width: 20% !important;
+}
+.end-1-col-4-2{
+    width: 17% !important;
+}
+.end-1-col-4-3{
+    width: 30% !important;
+}
+@media screen and (max-width: 1300px) {
+    .end-1-col-4 {
+        width: 45% !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .end-1-col-4 {
+        width: 65% !important;
+    }
+}
+@media screen and (max-width: 700px) {
+    .end-1-col-4 {
+        width: 90% !important;
+    }
+}
+.contact-us-text{
+    margin-left: 5%;
+    color: white;
+    transition: 0.3s;
+}
+.contact-us-text:hover{
+    color: var(--button-yellow-color);
+}
+.popular-news-text{
+    color: rgb(229, 229, 0);
+    transition: 0.3s;
+}
+.popular-news-text:hover{
+    color: var(--button-yellow-color);
+}
+.quick-links{
+    height: 350px;
+}
+.quick-links-text{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+.quick-links-text:hover{
+    color: var(--button-yellow-color);
+}
+.quick-links-button1{
+    width: 160px;
+    height: 60px;
+    border: 3px solid white;
+    color: white;
+    background: none;
+    transition: 0.3s;
+}
+.quick-links-button1:hover{
+    color: var(--text-color);
+    background-color: var(--button-yellow-color);
+    border: 3px solid var(--button-yellow-color);
+}
+
+.quick-links-button2{
+    margin-top: 14px;
+    width: 170px;
+    height: 60px;
+    color: var(--text-color);
+    border: none;
+    background-color: var(--button-yellow-color);
+    transition: 0.3s;
+}
+.quick-links-button2:hover{
+    background-color: var(--text-color);
+    color: white;
+}
+/* end-1 end */
+/* end-2 start */
+.end-2-col-4{
+    height: 100px;
+    width: 30% !important;
+    margin-left: 3%;
+    /* background-color: rgb(74, 171, 255); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end-2-icons{
+    font-size: larger;
+    margin-left: 1vh;
+    color: rgb(114, 109, 109);
+    transition: 0.3s;
+}
+.end-2-icons:hover {
+    color:rgb(255, 217, 0) ;
+}
+.privacy-policy{
+    font-size: smaller;
+    color: rgb(114, 109, 109);
+    transition: 0.3s;
+    text-decoration: none;
+}
+.privacy-policy:hover {
+    color:rgb(255, 217, 0) ;
+}
+/* end-2 end */
